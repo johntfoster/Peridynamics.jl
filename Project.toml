@@ -1,7 +1,7 @@
 name = "Peridynamics"
 uuid = "27d78a97-68d1-4634-8b4d-47c53436e19a"
 authors = ["John T. Foster"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "1.4.1"
