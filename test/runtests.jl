@@ -1,6 +1,10 @@
 using Peridynamics
 using Test
 
-@testset "Peridynamics.jl" begin
-    # Write your own tests here.
+@testset "Peridynamics" begin
+
+    @testset "Discretization" begin
+        include("discretization.jl")
+    end
+
 end
