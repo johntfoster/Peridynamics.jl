@@ -9,12 +9,13 @@ default step size of 1.0 will be used in all directions.
 
 # Arguments
 - `bounds::Array{<:Number}`: Array that defines the min/max values of a line 
-  segment (1D), rectangle (2D), or box (3D) that the grid will be placed in.  The 
-  first row of the array defines the min values, the second row defines the max 
-  values.
-- `steps::Array`: Array that defines how many steps in each direction.  If the 
-  array values in `steps` are integers then those values define how many points 
-  are used in each direction.  If the array values in `steps` are floating point 
+  segment (1D), rectangle (2D), or box (3D) that the grid will be placed in.  
+  The first row of the array defines the minimum values, the second row defines 
+  the maximum values.
+  - `steps::Array{Union{AbstractFloat, Integer}}`: Array that defines how many 
+  steps in each direction.  If the array values in `steps` are of type 
+  `<:Integer` integers then those values define how many points are used in 
+  each direction.  If the array values in `steps` are of type `<:AbstractFloat` 
   numbers then those values define the step size in each direction.
 
 # Examples
